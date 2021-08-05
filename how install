@@ -1,0 +1,18 @@
+//install django
+ pip install django
+//to install rest framework django 
+pip install djangorestframework 
+//disable security the blocks
+pip install django-cors-headers
+//creat project
+ django-admin startproject DjangoApi
+ //run server
+ python3 manage.py runserver
+ //creat app in django
+ python3 manage.py startapp EmployeeApp
+ //after creat model in EmployeeApp
+ //creat db 
+  pip install pyodbc//driver for db 
+  pip install mysqlclient 
+  python3 manage.py makemigrations EmployeeApp
+  python3 manage.py migrate EmployeeApp
