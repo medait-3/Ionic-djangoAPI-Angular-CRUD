@@ -1,0 +1,37 @@
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                EmployeeId
+            </th>
+            <th>
+                EmployeeName
+            </th>
+            <th>
+                Department
+            </th>
+            <th>
+                DateOfJoining
+            </th>
+            <th>
+                picture
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employees">
+            <td>{{emp.EmployeeId}}</td>
+            <td>{{emp.EmployeeName}}</td>
+            <td>{{emp.Department}}</td>
+            <td>{{emp.DateOfJoining}}</td>
+  <td> <img width="50px" height="50px" src="http://127.0.0.1:8000/Photos/{{emp.PhotoFileName}}"/></td>
+
+
+        
+        </tr>
+    </tbody>
+    
+    </table>
+    
+    
