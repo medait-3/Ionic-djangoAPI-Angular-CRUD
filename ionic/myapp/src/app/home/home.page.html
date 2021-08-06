@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item *ngFor="let emp of employees">
+    <ion-avatar slot="start">
+      <img  src="http://127.0.0.1:8000/Photos/{{emp.PhotoFileName}}"/>
+    </ion-avatar>
+    <ion-label>
+      <h2>EmployeeName : {{emp.EmployeeName}}</h2>
+      <h3>Department : {{emp.Department}}</h3>
+      <p>DateOfJoining : {{emp.DateOfJoining}}</p>
+    </ion-label>
+  </ion-item>
+</ion-content>
